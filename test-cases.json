@@ -1,0 +1,2767 @@
+{
+  "checkpoint": "Two-hour Programming Checkpoint",
+  "date": "2026-10-09",
+  "durationMinutes": 120,
+  "numericComparison": "For exercises 2, 3, and 7, compare results rounded to two decimal places. All other expected values are exact.",
+  "problems": [
+    {
+      "id": 1,
+      "title": "Swap Two Numbers",
+      "suggestedFunction": "swapValues(a, b)",
+      "testCases": [
+        {
+          "caseId": "01-01",
+          "input": {
+            "a": 5,
+            "b": 7
+          },
+          "expected": [
+            7,
+            5
+          ]
+        },
+        {
+          "caseId": "01-02",
+          "input": {
+            "a": -3,
+            "b": 9
+          },
+          "expected": [
+            9,
+            -3
+          ]
+        },
+        {
+          "caseId": "01-03",
+          "input": {
+            "a": 0,
+            "b": 12
+          },
+          "expected": [
+            12,
+            0
+          ]
+        },
+        {
+          "caseId": "01-04",
+          "input": {
+            "a": 8,
+            "b": 8
+          },
+          "expected": [
+            8,
+            8
+          ]
+        },
+        {
+          "caseId": "01-05",
+          "input": {
+            "a": -5,
+            "b": -2
+          },
+          "expected": [
+            -2,
+            -5
+          ]
+        },
+        {
+          "caseId": "01-06",
+          "input": {
+            "a": -2147483648,
+            "b": 2147483647
+          },
+          "expected": [
+            2147483647,
+            -2147483648
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Convert Temperature",
+      "suggestedFunction": "convertTemperature(temp, scale)",
+      "testCases": [
+        {
+          "caseId": "02-01",
+          "input": {
+            "temp": 100,
+            "scale": "C"
+          },
+          "expected": 212
+        },
+        {
+          "caseId": "02-02",
+          "input": {
+            "temp": 32,
+            "scale": "F"
+          },
+          "expected": 0
+        },
+        {
+          "caseId": "02-03",
+          "input": {
+            "temp": 0,
+            "scale": "C"
+          },
+          "expected": 32
+        },
+        {
+          "caseId": "02-04",
+          "input": {
+            "temp": -40,
+            "scale": "C"
+          },
+          "expected": -40
+        },
+        {
+          "caseId": "02-05",
+          "input": {
+            "temp": -40,
+            "scale": "F"
+          },
+          "expected": -40
+        },
+        {
+          "caseId": "02-06",
+          "input": {
+            "temp": 98.6,
+            "scale": "F"
+          },
+          "expected": 37
+        },
+        {
+          "caseId": "02-07",
+          "input": {
+            "temp": 37.5,
+            "scale": "C"
+          },
+          "expected": 99.5
+        },
+        {
+          "caseId": "02-08",
+          "input": {
+            "temp": 75,
+            "scale": "F"
+          },
+          "expected": 23.89
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Simple and Compound Interest",
+      "suggestedFunction": "calculateInterest(principal, rate, time)",
+      "testCases": [
+        {
+          "caseId": "03-01",
+          "input": {
+            "principal": 1000,
+            "rate": 5,
+            "time": 2
+          },
+          "expected": [
+            100,
+            102.5
+          ]
+        },
+        {
+          "caseId": "03-02",
+          "input": {
+            "principal": 10000,
+            "rate": 12,
+            "time": 2
+          },
+          "expected": [
+            2400,
+            2544
+          ]
+        },
+        {
+          "caseId": "03-03",
+          "input": {
+            "principal": 500,
+            "rate": 0,
+            "time": 3
+          },
+          "expected": [
+            0,
+            0
+          ]
+        },
+        {
+          "caseId": "03-04",
+          "input": {
+            "principal": 1000,
+            "rate": 5,
+            "time": 0
+          },
+          "expected": [
+            0,
+            0
+          ]
+        },
+        {
+          "caseId": "03-05",
+          "input": {
+            "principal": 2000,
+            "rate": 10,
+            "time": 1
+          },
+          "expected": [
+            200,
+            200
+          ]
+        },
+        {
+          "caseId": "03-06",
+          "input": {
+            "principal": 1500,
+            "rate": 4,
+            "time": 3
+          },
+          "expected": [
+            180,
+            187.3
+          ]
+        },
+        {
+          "caseId": "03-07",
+          "input": {
+            "principal": 2500,
+            "rate": 7.5,
+            "time": 2
+          },
+          "expected": [
+            375,
+            389.06
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Convert Seconds to Hours, Minutes, and Seconds",
+      "suggestedFunction": "convertSeconds(totalSeconds)",
+      "testCases": [
+        {
+          "caseId": "04-01",
+          "input": {
+            "totalSeconds": 3661
+          },
+          "expected": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "caseId": "04-02",
+          "input": {
+            "totalSeconds": 86399
+          },
+          "expected": [
+            23,
+            59,
+            59
+          ]
+        },
+        {
+          "caseId": "04-03",
+          "input": {
+            "totalSeconds": 0
+          },
+          "expected": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "caseId": "04-04",
+          "input": {
+            "totalSeconds": 59
+          },
+          "expected": [
+            0,
+            0,
+            59
+          ]
+        },
+        {
+          "caseId": "04-05",
+          "input": {
+            "totalSeconds": 60
+          },
+          "expected": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "caseId": "04-06",
+          "input": {
+            "totalSeconds": 3599
+          },
+          "expected": [
+            0,
+            59,
+            59
+          ]
+        },
+        {
+          "caseId": "04-07",
+          "input": {
+            "totalSeconds": 3600
+          },
+          "expected": [
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "caseId": "04-08",
+          "input": {
+            "totalSeconds": 90061
+          },
+          "expected": [
+            25,
+            1,
+            1
+          ]
+        },
+        {
+          "caseId": "04-09",
+          "input": {
+            "totalSeconds": 2147483647
+          },
+          "expected": [
+            596523,
+            14,
+            7
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Absolute Value Without a Built-in Function",
+      "suggestedFunction": "absoluteValue(n)",
+      "testCases": [
+        {
+          "caseId": "05-01",
+          "input": {
+            "n": -5
+          },
+          "expected": 5
+        },
+        {
+          "caseId": "05-02",
+          "input": {
+            "n": 42
+          },
+          "expected": 42
+        },
+        {
+          "caseId": "05-03",
+          "input": {
+            "n": 0
+          },
+          "expected": 0
+        },
+        {
+          "caseId": "05-04",
+          "input": {
+            "n": -1
+          },
+          "expected": 1
+        },
+        {
+          "caseId": "05-05",
+          "input": {
+            "n": 1
+          },
+          "expected": 1
+        },
+        {
+          "caseId": "05-06",
+          "input": {
+            "n": -2147483648
+          },
+          "expected": 2147483648
+        },
+        {
+          "caseId": "05-07",
+          "input": {
+            "n": 2147483647
+          },
+          "expected": 2147483647
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Integer Quotient and Remainder",
+      "suggestedFunction": "divideWithRemainder(dividend, divisor)",
+      "testCases": [
+        {
+          "caseId": "06-01",
+          "input": {
+            "dividend": 17,
+            "divisor": 5
+          },
+          "expected": [
+            3,
+            2
+          ]
+        },
+        {
+          "caseId": "06-02",
+          "input": {
+            "dividend": 3,
+            "divisor": 8
+          },
+          "expected": [
+            0,
+            3
+          ]
+        },
+        {
+          "caseId": "06-03",
+          "input": {
+            "dividend": 20,
+            "divisor": 4
+          },
+          "expected": [
+            5,
+            0
+          ]
+        },
+        {
+          "caseId": "06-04",
+          "input": {
+            "dividend": 0,
+            "divisor": 7
+          },
+          "expected": [
+            0,
+            0
+          ]
+        },
+        {
+          "caseId": "06-05",
+          "input": {
+            "dividend": -17,
+            "divisor": 5
+          },
+          "expected": [
+            -3,
+            -2
+          ]
+        },
+        {
+          "caseId": "06-06",
+          "input": {
+            "dividend": 17,
+            "divisor": -5
+          },
+          "expected": [
+            -3,
+            2
+          ]
+        },
+        {
+          "caseId": "06-07",
+          "input": {
+            "dividend": -17,
+            "divisor": -5
+          },
+          "expected": [
+            3,
+            -2
+          ]
+        },
+        {
+          "caseId": "06-08",
+          "input": {
+            "dividend": -3,
+            "divisor": 8
+          },
+          "expected": [
+            0,
+            -3
+          ]
+        },
+        {
+          "caseId": "06-09",
+          "input": {
+            "dividend": -2147483648,
+            "divisor": -1
+          },
+          "expected": [
+            2147483648,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Area and Perimeter of Shapes",
+      "suggestedFunction": "areaAndPerimeter(shape, dims)",
+      "testCases": [
+        {
+          "caseId": "07-01",
+          "input": {
+            "shape": "rectangle",
+            "dims": [
+              4,
+              3
+            ]
+          },
+          "expected": [
+            12,
+            14
+          ]
+        },
+        {
+          "caseId": "07-02",
+          "input": {
+            "shape": "rectangle",
+            "dims": [
+              2.5,
+              4
+            ]
+          },
+          "expected": [
+            10,
+            13
+          ]
+        },
+        {
+          "caseId": "07-03",
+          "input": {
+            "shape": "square",
+            "dims": [
+              5
+            ]
+          },
+          "expected": [
+            25,
+            20
+          ]
+        },
+        {
+          "caseId": "07-04",
+          "input": {
+            "shape": "square",
+            "dims": [
+              1.5
+            ]
+          },
+          "expected": [
+            2.25,
+            6
+          ]
+        },
+        {
+          "caseId": "07-05",
+          "input": {
+            "shape": "circle",
+            "dims": [
+              1
+            ]
+          },
+          "expected": [
+            3.14,
+            6.28
+          ]
+        },
+        {
+          "caseId": "07-06",
+          "input": {
+            "shape": "circle",
+            "dims": [
+              2
+            ]
+          },
+          "expected": [
+            12.57,
+            12.57
+          ]
+        },
+        {
+          "caseId": "07-07",
+          "input": {
+            "shape": "triangle",
+            "dims": [
+              3,
+              4,
+              5
+            ]
+          },
+          "expected": [
+            6,
+            12
+          ]
+        },
+        {
+          "caseId": "07-08",
+          "input": {
+            "shape": "triangle",
+            "dims": [
+              5,
+              5,
+              6
+            ]
+          },
+          "expected": [
+            12,
+            16
+          ]
+        },
+        {
+          "caseId": "07-09",
+          "input": {
+            "shape": "triangle",
+            "dims": [
+              2,
+              2,
+              2
+            ]
+          },
+          "expected": [
+            1.73,
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Even or Odd",
+      "suggestedFunction": "evenOrOdd(n)",
+      "testCases": [
+        {
+          "caseId": "08-01",
+          "input": {
+            "n": 4
+          },
+          "expected": "Even"
+        },
+        {
+          "caseId": "08-02",
+          "input": {
+            "n": -3
+          },
+          "expected": "Odd"
+        },
+        {
+          "caseId": "08-03",
+          "input": {
+            "n": 0
+          },
+          "expected": "Even"
+        },
+        {
+          "caseId": "08-04",
+          "input": {
+            "n": 1
+          },
+          "expected": "Odd"
+        },
+        {
+          "caseId": "08-05",
+          "input": {
+            "n": -4
+          },
+          "expected": "Even"
+        },
+        {
+          "caseId": "08-06",
+          "input": {
+            "n": -1
+          },
+          "expected": "Odd"
+        },
+        {
+          "caseId": "08-07",
+          "input": {
+            "n": 2147483647
+          },
+          "expected": "Odd"
+        },
+        {
+          "caseId": "08-08",
+          "input": {
+            "n": -2147483648
+          },
+          "expected": "Even"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Positive, Negative, or Zero",
+      "suggestedFunction": "classifyNumber(n)",
+      "testCases": [
+        {
+          "caseId": "09-01",
+          "input": {
+            "n": 5
+          },
+          "expected": "Positive"
+        },
+        {
+          "caseId": "09-02",
+          "input": {
+            "n": 0
+          },
+          "expected": "Zero"
+        },
+        {
+          "caseId": "09-03",
+          "input": {
+            "n": -5
+          },
+          "expected": "Negative"
+        },
+        {
+          "caseId": "09-04",
+          "input": {
+            "n": 1
+          },
+          "expected": "Positive"
+        },
+        {
+          "caseId": "09-05",
+          "input": {
+            "n": -1
+          },
+          "expected": "Negative"
+        },
+        {
+          "caseId": "09-06",
+          "input": {
+            "n": 2147483647
+          },
+          "expected": "Positive"
+        },
+        {
+          "caseId": "09-07",
+          "input": {
+            "n": -2147483648
+          },
+          "expected": "Negative"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Leap Year — One-line Condition",
+      "suggestedFunction": "isLeapYear(year)",
+      "testCases": [
+        {
+          "caseId": "10-01",
+          "input": {
+            "year": 2000
+          },
+          "expected": true
+        },
+        {
+          "caseId": "10-02",
+          "input": {
+            "year": 1900
+          },
+          "expected": false
+        },
+        {
+          "caseId": "10-03",
+          "input": {
+            "year": 2024
+          },
+          "expected": true
+        },
+        {
+          "caseId": "10-04",
+          "input": {
+            "year": 2023
+          },
+          "expected": false
+        },
+        {
+          "caseId": "10-05",
+          "input": {
+            "year": 2100
+          },
+          "expected": false
+        },
+        {
+          "caseId": "10-06",
+          "input": {
+            "year": 2400
+          },
+          "expected": true
+        },
+        {
+          "caseId": "10-07",
+          "input": {
+            "year": 4
+          },
+          "expected": true
+        },
+        {
+          "caseId": "10-08",
+          "input": {
+            "year": 100
+          },
+          "expected": false
+        },
+        {
+          "caseId": "10-09",
+          "input": {
+            "year": 400
+          },
+          "expected": true
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Convert Marks to a Letter Grade",
+      "suggestedFunction": "letterGrade(marks)",
+      "testCases": [
+        {
+          "caseId": "11-01",
+          "input": {
+            "marks": 95
+          },
+          "expected": "A"
+        },
+        {
+          "caseId": "11-02",
+          "input": {
+            "marks": 72
+          },
+          "expected": "C"
+        },
+        {
+          "caseId": "11-03",
+          "input": {
+            "marks": 100
+          },
+          "expected": "A"
+        },
+        {
+          "caseId": "11-04",
+          "input": {
+            "marks": 90
+          },
+          "expected": "A"
+        },
+        {
+          "caseId": "11-05",
+          "input": {
+            "marks": 89
+          },
+          "expected": "B"
+        },
+        {
+          "caseId": "11-06",
+          "input": {
+            "marks": 80
+          },
+          "expected": "B"
+        },
+        {
+          "caseId": "11-07",
+          "input": {
+            "marks": 79
+          },
+          "expected": "C"
+        },
+        {
+          "caseId": "11-08",
+          "input": {
+            "marks": 70
+          },
+          "expected": "C"
+        },
+        {
+          "caseId": "11-09",
+          "input": {
+            "marks": 69
+          },
+          "expected": "D"
+        },
+        {
+          "caseId": "11-10",
+          "input": {
+            "marks": 60
+          },
+          "expected": "D"
+        },
+        {
+          "caseId": "11-11",
+          "input": {
+            "marks": 59
+          },
+          "expected": "F"
+        },
+        {
+          "caseId": "11-12",
+          "input": {
+            "marks": 0
+          },
+          "expected": "F"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Can Three Sides Form a Triangle?",
+      "suggestedFunction": "isValidTriangle(a, b, c)",
+      "testCases": [
+        {
+          "caseId": "12-01",
+          "input": {
+            "a": 3,
+            "b": 4,
+            "c": 5
+          },
+          "expected": true
+        },
+        {
+          "caseId": "12-02",
+          "input": {
+            "a": 1,
+            "b": 1,
+            "c": 2
+          },
+          "expected": false
+        },
+        {
+          "caseId": "12-03",
+          "input": {
+            "a": 2,
+            "b": 2,
+            "c": 2
+          },
+          "expected": true
+        },
+        {
+          "caseId": "12-04",
+          "input": {
+            "a": 2,
+            "b": 3,
+            "c": 6
+          },
+          "expected": false
+        },
+        {
+          "caseId": "12-05",
+          "input": {
+            "a": 10,
+            "b": 2,
+            "c": 3
+          },
+          "expected": false
+        },
+        {
+          "caseId": "12-06",
+          "input": {
+            "a": 3,
+            "b": 10,
+            "c": 2
+          },
+          "expected": false
+        },
+        {
+          "caseId": "12-07",
+          "input": {
+            "a": 2,
+            "b": 3,
+            "c": 4
+          },
+          "expected": true
+        },
+        {
+          "caseId": "12-08",
+          "input": {
+            "a": 1.5,
+            "b": 2.5,
+            "c": 3
+          },
+          "expected": true
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Vowel or Consonant",
+      "suggestedFunction": "vowelOrConsonant(ch)",
+      "testCases": [
+        {
+          "caseId": "13-01",
+          "input": {
+            "ch": "a"
+          },
+          "expected": "Vowel"
+        },
+        {
+          "caseId": "13-02",
+          "input": {
+            "ch": "Q"
+          },
+          "expected": "Consonant"
+        },
+        {
+          "caseId": "13-03",
+          "input": {
+            "ch": "E"
+          },
+          "expected": "Vowel"
+        },
+        {
+          "caseId": "13-04",
+          "input": {
+            "ch": "i"
+          },
+          "expected": "Vowel"
+        },
+        {
+          "caseId": "13-05",
+          "input": {
+            "ch": "O"
+          },
+          "expected": "Vowel"
+        },
+        {
+          "caseId": "13-06",
+          "input": {
+            "ch": "u"
+          },
+          "expected": "Vowel"
+        },
+        {
+          "caseId": "13-07",
+          "input": {
+            "ch": "b"
+          },
+          "expected": "Consonant"
+        },
+        {
+          "caseId": "13-08",
+          "input": {
+            "ch": "Z"
+          },
+          "expected": "Consonant"
+        },
+        {
+          "caseId": "13-09",
+          "input": {
+            "ch": "y"
+          },
+          "expected": "Consonant"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Are Three Points Collinear?",
+      "suggestedFunction": "areCollinear(x1, y1, x2, y2, x3, y3)",
+      "testCases": [
+        {
+          "caseId": "14-01",
+          "input": {
+            "x1": 1,
+            "y1": 1,
+            "x2": 2,
+            "y2": 2,
+            "x3": 3,
+            "y3": 3
+          },
+          "expected": true
+        },
+        {
+          "caseId": "14-02",
+          "input": {
+            "x1": 1,
+            "y1": 1,
+            "x2": 2,
+            "y2": 2,
+            "x3": 3,
+            "y3": 5
+          },
+          "expected": false
+        },
+        {
+          "caseId": "14-03",
+          "input": {
+            "x1": 2,
+            "y1": 1,
+            "x2": 2,
+            "y2": 4,
+            "x3": 2,
+            "y3": -3
+          },
+          "expected": true
+        },
+        {
+          "caseId": "14-04",
+          "input": {
+            "x1": 0,
+            "y1": 5,
+            "x2": 3,
+            "y2": 5,
+            "x3": -2,
+            "y3": 5
+          },
+          "expected": true
+        },
+        {
+          "caseId": "14-05",
+          "input": {
+            "x1": -1,
+            "y1": -1,
+            "x2": 0,
+            "y2": 0,
+            "x3": 2,
+            "y3": 2
+          },
+          "expected": true
+        },
+        {
+          "caseId": "14-06",
+          "input": {
+            "x1": 0,
+            "y1": 0,
+            "x2": 0,
+            "y2": 0,
+            "x3": 5,
+            "y3": 7
+          },
+          "expected": true
+        },
+        {
+          "caseId": "14-07",
+          "input": {
+            "x1": 1,
+            "y1": 1,
+            "x2": 1,
+            "y2": 1,
+            "x3": 1,
+            "y3": 1
+          },
+          "expected": true
+        },
+        {
+          "caseId": "14-08",
+          "input": {
+            "x1": -2147483648,
+            "y1": -2147483648,
+            "x2": 0,
+            "y2": 0,
+            "x3": 2147483647,
+            "y3": 2147483647
+          },
+          "expected": true
+        },
+        {
+          "caseId": "14-09",
+          "input": {
+            "x1": -2147483648,
+            "y1": -2147483648,
+            "x2": 2147483647,
+            "y2": -2147483648,
+            "x3": -2147483648,
+            "y3": 2147483647
+          },
+          "expected": false
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Numbers from 1 to n",
+      "suggestedFunction": "numbersFromOne(n)",
+      "testCases": [
+        {
+          "caseId": "15-01",
+          "input": {
+            "n": 5
+          },
+          "expected": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "caseId": "15-02",
+          "input": {
+            "n": 3
+          },
+          "expected": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "caseId": "15-03",
+          "input": {
+            "n": 1
+          },
+          "expected": [
+            1
+          ]
+        },
+        {
+          "caseId": "15-04",
+          "input": {
+            "n": 2
+          },
+          "expected": [
+            1,
+            2
+          ]
+        },
+        {
+          "caseId": "15-05",
+          "input": {
+            "n": 8
+          },
+          "expected": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "caseId": "15-06",
+          "input": {
+            "n": 10
+          },
+          "expected": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "caseId": "15-07",
+          "input": {
+            "n": 1000
+          },
+          "expected": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104,
+            105,
+            106,
+            107,
+            108,
+            109,
+            110,
+            111,
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119,
+            120,
+            121,
+            122,
+            123,
+            124,
+            125,
+            126,
+            127,
+            128,
+            129,
+            130,
+            131,
+            132,
+            133,
+            134,
+            135,
+            136,
+            137,
+            138,
+            139,
+            140,
+            141,
+            142,
+            143,
+            144,
+            145,
+            146,
+            147,
+            148,
+            149,
+            150,
+            151,
+            152,
+            153,
+            154,
+            155,
+            156,
+            157,
+            158,
+            159,
+            160,
+            161,
+            162,
+            163,
+            164,
+            165,
+            166,
+            167,
+            168,
+            169,
+            170,
+            171,
+            172,
+            173,
+            174,
+            175,
+            176,
+            177,
+            178,
+            179,
+            180,
+            181,
+            182,
+            183,
+            184,
+            185,
+            186,
+            187,
+            188,
+            189,
+            190,
+            191,
+            192,
+            193,
+            194,
+            195,
+            196,
+            197,
+            198,
+            199,
+            200,
+            201,
+            202,
+            203,
+            204,
+            205,
+            206,
+            207,
+            208,
+            209,
+            210,
+            211,
+            212,
+            213,
+            214,
+            215,
+            216,
+            217,
+            218,
+            219,
+            220,
+            221,
+            222,
+            223,
+            224,
+            225,
+            226,
+            227,
+            228,
+            229,
+            230,
+            231,
+            232,
+            233,
+            234,
+            235,
+            236,
+            237,
+            238,
+            239,
+            240,
+            241,
+            242,
+            243,
+            244,
+            245,
+            246,
+            247,
+            248,
+            249,
+            250,
+            251,
+            252,
+            253,
+            254,
+            255,
+            256,
+            257,
+            258,
+            259,
+            260,
+            261,
+            262,
+            263,
+            264,
+            265,
+            266,
+            267,
+            268,
+            269,
+            270,
+            271,
+            272,
+            273,
+            274,
+            275,
+            276,
+            277,
+            278,
+            279,
+            280,
+            281,
+            282,
+            283,
+            284,
+            285,
+            286,
+            287,
+            288,
+            289,
+            290,
+            291,
+            292,
+            293,
+            294,
+            295,
+            296,
+            297,
+            298,
+            299,
+            300,
+            301,
+            302,
+            303,
+            304,
+            305,
+            306,
+            307,
+            308,
+            309,
+            310,
+            311,
+            312,
+            313,
+            314,
+            315,
+            316,
+            317,
+            318,
+            319,
+            320,
+            321,
+            322,
+            323,
+            324,
+            325,
+            326,
+            327,
+            328,
+            329,
+            330,
+            331,
+            332,
+            333,
+            334,
+            335,
+            336,
+            337,
+            338,
+            339,
+            340,
+            341,
+            342,
+            343,
+            344,
+            345,
+            346,
+            347,
+            348,
+            349,
+            350,
+            351,
+            352,
+            353,
+            354,
+            355,
+            356,
+            357,
+            358,
+            359,
+            360,
+            361,
+            362,
+            363,
+            364,
+            365,
+            366,
+            367,
+            368,
+            369,
+            370,
+            371,
+            372,
+            373,
+            374,
+            375,
+            376,
+            377,
+            378,
+            379,
+            380,
+            381,
+            382,
+            383,
+            384,
+            385,
+            386,
+            387,
+            388,
+            389,
+            390,
+            391,
+            392,
+            393,
+            394,
+            395,
+            396,
+            397,
+            398,
+            399,
+            400,
+            401,
+            402,
+            403,
+            404,
+            405,
+            406,
+            407,
+            408,
+            409,
+            410,
+            411,
+            412,
+            413,
+            414,
+            415,
+            416,
+            417,
+            418,
+            419,
+            420,
+            421,
+            422,
+            423,
+            424,
+            425,
+            426,
+            427,
+            428,
+            429,
+            430,
+            431,
+            432,
+            433,
+            434,
+            435,
+            436,
+            437,
+            438,
+            439,
+            440,
+            441,
+            442,
+            443,
+            444,
+            445,
+            446,
+            447,
+            448,
+            449,
+            450,
+            451,
+            452,
+            453,
+            454,
+            455,
+            456,
+            457,
+            458,
+            459,
+            460,
+            461,
+            462,
+            463,
+            464,
+            465,
+            466,
+            467,
+            468,
+            469,
+            470,
+            471,
+            472,
+            473,
+            474,
+            475,
+            476,
+            477,
+            478,
+            479,
+            480,
+            481,
+            482,
+            483,
+            484,
+            485,
+            486,
+            487,
+            488,
+            489,
+            490,
+            491,
+            492,
+            493,
+            494,
+            495,
+            496,
+            497,
+            498,
+            499,
+            500,
+            501,
+            502,
+            503,
+            504,
+            505,
+            506,
+            507,
+            508,
+            509,
+            510,
+            511,
+            512,
+            513,
+            514,
+            515,
+            516,
+            517,
+            518,
+            519,
+            520,
+            521,
+            522,
+            523,
+            524,
+            525,
+            526,
+            527,
+            528,
+            529,
+            530,
+            531,
+            532,
+            533,
+            534,
+            535,
+            536,
+            537,
+            538,
+            539,
+            540,
+            541,
+            542,
+            543,
+            544,
+            545,
+            546,
+            547,
+            548,
+            549,
+            550,
+            551,
+            552,
+            553,
+            554,
+            555,
+            556,
+            557,
+            558,
+            559,
+            560,
+            561,
+            562,
+            563,
+            564,
+            565,
+            566,
+            567,
+            568,
+            569,
+            570,
+            571,
+            572,
+            573,
+            574,
+            575,
+            576,
+            577,
+            578,
+            579,
+            580,
+            581,
+            582,
+            583,
+            584,
+            585,
+            586,
+            587,
+            588,
+            589,
+            590,
+            591,
+            592,
+            593,
+            594,
+            595,
+            596,
+            597,
+            598,
+            599,
+            600,
+            601,
+            602,
+            603,
+            604,
+            605,
+            606,
+            607,
+            608,
+            609,
+            610,
+            611,
+            612,
+            613,
+            614,
+            615,
+            616,
+            617,
+            618,
+            619,
+            620,
+            621,
+            622,
+            623,
+            624,
+            625,
+            626,
+            627,
+            628,
+            629,
+            630,
+            631,
+            632,
+            633,
+            634,
+            635,
+            636,
+            637,
+            638,
+            639,
+            640,
+            641,
+            642,
+            643,
+            644,
+            645,
+            646,
+            647,
+            648,
+            649,
+            650,
+            651,
+            652,
+            653,
+            654,
+            655,
+            656,
+            657,
+            658,
+            659,
+            660,
+            661,
+            662,
+            663,
+            664,
+            665,
+            666,
+            667,
+            668,
+            669,
+            670,
+            671,
+            672,
+            673,
+            674,
+            675,
+            676,
+            677,
+            678,
+            679,
+            680,
+            681,
+            682,
+            683,
+            684,
+            685,
+            686,
+            687,
+            688,
+            689,
+            690,
+            691,
+            692,
+            693,
+            694,
+            695,
+            696,
+            697,
+            698,
+            699,
+            700,
+            701,
+            702,
+            703,
+            704,
+            705,
+            706,
+            707,
+            708,
+            709,
+            710,
+            711,
+            712,
+            713,
+            714,
+            715,
+            716,
+            717,
+            718,
+            719,
+            720,
+            721,
+            722,
+            723,
+            724,
+            725,
+            726,
+            727,
+            728,
+            729,
+            730,
+            731,
+            732,
+            733,
+            734,
+            735,
+            736,
+            737,
+            738,
+            739,
+            740,
+            741,
+            742,
+            743,
+            744,
+            745,
+            746,
+            747,
+            748,
+            749,
+            750,
+            751,
+            752,
+            753,
+            754,
+            755,
+            756,
+            757,
+            758,
+            759,
+            760,
+            761,
+            762,
+            763,
+            764,
+            765,
+            766,
+            767,
+            768,
+            769,
+            770,
+            771,
+            772,
+            773,
+            774,
+            775,
+            776,
+            777,
+            778,
+            779,
+            780,
+            781,
+            782,
+            783,
+            784,
+            785,
+            786,
+            787,
+            788,
+            789,
+            790,
+            791,
+            792,
+            793,
+            794,
+            795,
+            796,
+            797,
+            798,
+            799,
+            800,
+            801,
+            802,
+            803,
+            804,
+            805,
+            806,
+            807,
+            808,
+            809,
+            810,
+            811,
+            812,
+            813,
+            814,
+            815,
+            816,
+            817,
+            818,
+            819,
+            820,
+            821,
+            822,
+            823,
+            824,
+            825,
+            826,
+            827,
+            828,
+            829,
+            830,
+            831,
+            832,
+            833,
+            834,
+            835,
+            836,
+            837,
+            838,
+            839,
+            840,
+            841,
+            842,
+            843,
+            844,
+            845,
+            846,
+            847,
+            848,
+            849,
+            850,
+            851,
+            852,
+            853,
+            854,
+            855,
+            856,
+            857,
+            858,
+            859,
+            860,
+            861,
+            862,
+            863,
+            864,
+            865,
+            866,
+            867,
+            868,
+            869,
+            870,
+            871,
+            872,
+            873,
+            874,
+            875,
+            876,
+            877,
+            878,
+            879,
+            880,
+            881,
+            882,
+            883,
+            884,
+            885,
+            886,
+            887,
+            888,
+            889,
+            890,
+            891,
+            892,
+            893,
+            894,
+            895,
+            896,
+            897,
+            898,
+            899,
+            900,
+            901,
+            902,
+            903,
+            904,
+            905,
+            906,
+            907,
+            908,
+            909,
+            910,
+            911,
+            912,
+            913,
+            914,
+            915,
+            916,
+            917,
+            918,
+            919,
+            920,
+            921,
+            922,
+            923,
+            924,
+            925,
+            926,
+            927,
+            928,
+            929,
+            930,
+            931,
+            932,
+            933,
+            934,
+            935,
+            936,
+            937,
+            938,
+            939,
+            940,
+            941,
+            942,
+            943,
+            944,
+            945,
+            946,
+            947,
+            948,
+            949,
+            950,
+            951,
+            952,
+            953,
+            954,
+            955,
+            956,
+            957,
+            958,
+            959,
+            960,
+            961,
+            962,
+            963,
+            964,
+            965,
+            966,
+            967,
+            968,
+            969,
+            970,
+            971,
+            972,
+            973,
+            974,
+            975,
+            976,
+            977,
+            978,
+            979,
+            980,
+            981,
+            982,
+            983,
+            984,
+            985,
+            986,
+            987,
+            988,
+            989,
+            990,
+            991,
+            992,
+            993,
+            994,
+            995,
+            996,
+            997,
+            998,
+            999,
+            1000
+          ]
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "title": "Multiplication Table",
+      "suggestedFunction": "multiplicationTable(n)",
+      "testCases": [
+        {
+          "caseId": "16-01",
+          "input": {
+            "n": 5
+          },
+          "expected": [
+            5,
+            10,
+            15,
+            20,
+            25,
+            30,
+            35,
+            40,
+            45,
+            50
+          ]
+        },
+        {
+          "caseId": "16-02",
+          "input": {
+            "n": 7
+          },
+          "expected": [
+            7,
+            14,
+            21,
+            28,
+            35,
+            42,
+            49,
+            56,
+            63,
+            70
+          ]
+        },
+        {
+          "caseId": "16-03",
+          "input": {
+            "n": 0
+          },
+          "expected": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "caseId": "16-04",
+          "input": {
+            "n": 1
+          },
+          "expected": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "caseId": "16-05",
+          "input": {
+            "n": -3
+          },
+          "expected": [
+            -3,
+            -6,
+            -9,
+            -12,
+            -15,
+            -18,
+            -21,
+            -24,
+            -27,
+            -30
+          ]
+        },
+        {
+          "caseId": "16-06",
+          "input": {
+            "n": 1000
+          },
+          "expected": [
+            1000,
+            2000,
+            3000,
+            4000,
+            5000,
+            6000,
+            7000,
+            8000,
+            9000,
+            10000
+          ]
+        },
+        {
+          "caseId": "16-07",
+          "input": {
+            "n": -1000
+          },
+          "expected": [
+            -1000,
+            -2000,
+            -3000,
+            -4000,
+            -5000,
+            -6000,
+            -7000,
+            -8000,
+            -9000,
+            -10000
+          ]
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "title": "Sum of Even or Odd Numbers",
+      "suggestedFunction": "sumByParity(n, parity)",
+      "testCases": [
+        {
+          "caseId": "17-01",
+          "input": {
+            "n": 10,
+            "parity": "even"
+          },
+          "expected": 30
+        },
+        {
+          "caseId": "17-02",
+          "input": {
+            "n": 9,
+            "parity": "odd"
+          },
+          "expected": 25
+        },
+        {
+          "caseId": "17-03",
+          "input": {
+            "n": 0,
+            "parity": "even"
+          },
+          "expected": 0
+        },
+        {
+          "caseId": "17-04",
+          "input": {
+            "n": 0,
+            "parity": "odd"
+          },
+          "expected": 0
+        },
+        {
+          "caseId": "17-05",
+          "input": {
+            "n": 1,
+            "parity": "even"
+          },
+          "expected": 0
+        },
+        {
+          "caseId": "17-06",
+          "input": {
+            "n": 1,
+            "parity": "odd"
+          },
+          "expected": 1
+        },
+        {
+          "caseId": "17-07",
+          "input": {
+            "n": 2,
+            "parity": "even"
+          },
+          "expected": 2
+        },
+        {
+          "caseId": "17-08",
+          "input": {
+            "n": 5,
+            "parity": "even"
+          },
+          "expected": 6
+        },
+        {
+          "caseId": "17-09",
+          "input": {
+            "n": 5,
+            "parity": "odd"
+          },
+          "expected": 9
+        },
+        {
+          "caseId": "17-10",
+          "input": {
+            "n": 10000,
+            "parity": "even"
+          },
+          "expected": 25005000
+        },
+        {
+          "caseId": "17-11",
+          "input": {
+            "n": 10000,
+            "parity": "odd"
+          },
+          "expected": 25000000
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "title": "Count Digits in an Integer",
+      "suggestedFunction": "countDigits(n)",
+      "testCases": [
+        {
+          "caseId": "18-01",
+          "input": {
+            "n": 12345
+          },
+          "expected": 5
+        },
+        {
+          "caseId": "18-02",
+          "input": {
+            "n": -789
+          },
+          "expected": 3
+        },
+        {
+          "caseId": "18-03",
+          "input": {
+            "n": 0
+          },
+          "expected": 1
+        },
+        {
+          "caseId": "18-04",
+          "input": {
+            "n": 1
+          },
+          "expected": 1
+        },
+        {
+          "caseId": "18-05",
+          "input": {
+            "n": -1
+          },
+          "expected": 1
+        },
+        {
+          "caseId": "18-06",
+          "input": {
+            "n": 9
+          },
+          "expected": 1
+        },
+        {
+          "caseId": "18-07",
+          "input": {
+            "n": -9
+          },
+          "expected": 1
+        },
+        {
+          "caseId": "18-08",
+          "input": {
+            "n": 10
+          },
+          "expected": 2
+        },
+        {
+          "caseId": "18-09",
+          "input": {
+            "n": -10
+          },
+          "expected": 2
+        },
+        {
+          "caseId": "18-10",
+          "input": {
+            "n": 99
+          },
+          "expected": 2
+        },
+        {
+          "caseId": "18-11",
+          "input": {
+            "n": 100
+          },
+          "expected": 3
+        },
+        {
+          "caseId": "18-12",
+          "input": {
+            "n": -100
+          },
+          "expected": 3
+        },
+        {
+          "caseId": "18-13",
+          "input": {
+            "n": 1000
+          },
+          "expected": 4
+        },
+        {
+          "caseId": "18-14",
+          "input": {
+            "n": 10001
+          },
+          "expected": 5
+        },
+        {
+          "caseId": "18-15",
+          "input": {
+            "n": 999999999
+          },
+          "expected": 9
+        },
+        {
+          "caseId": "18-16",
+          "input": {
+            "n": 1000000000
+          },
+          "expected": 10
+        },
+        {
+          "caseId": "18-17",
+          "input": {
+            "n": 2147483647
+          },
+          "expected": 10
+        },
+        {
+          "caseId": "18-18",
+          "input": {
+            "n": -2147483648
+          },
+          "expected": 10
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "title": "Sum of All Divisors of a Number",
+      "suggestedFunction": "sumDivisors(n)",
+      "testCases": [
+        {
+          "caseId": "19-01",
+          "input": {
+            "n": 12
+          },
+          "expected": 28
+        },
+        {
+          "caseId": "19-02",
+          "input": {
+            "n": 6
+          },
+          "expected": 12
+        },
+        {
+          "caseId": "19-03",
+          "input": {
+            "n": 1
+          },
+          "expected": 1
+        },
+        {
+          "caseId": "19-04",
+          "input": {
+            "n": 2
+          },
+          "expected": 3
+        },
+        {
+          "caseId": "19-05",
+          "input": {
+            "n": 3
+          },
+          "expected": 4
+        },
+        {
+          "caseId": "19-06",
+          "input": {
+            "n": 4
+          },
+          "expected": 7
+        },
+        {
+          "caseId": "19-07",
+          "input": {
+            "n": 7
+          },
+          "expected": 8
+        },
+        {
+          "caseId": "19-08",
+          "input": {
+            "n": 9
+          },
+          "expected": 13
+        },
+        {
+          "caseId": "19-09",
+          "input": {
+            "n": 16
+          },
+          "expected": 31
+        },
+        {
+          "caseId": "19-10",
+          "input": {
+            "n": 28
+          },
+          "expected": 56
+        },
+        {
+          "caseId": "19-11",
+          "input": {
+            "n": 36
+          },
+          "expected": 91
+        },
+        {
+          "caseId": "19-12",
+          "input": {
+            "n": 49
+          },
+          "expected": 57
+        },
+        {
+          "caseId": "19-13",
+          "input": {
+            "n": 60
+          },
+          "expected": 168
+        },
+        {
+          "caseId": "19-14",
+          "input": {
+            "n": 97
+          },
+          "expected": 98
+        },
+        {
+          "caseId": "19-15",
+          "input": {
+            "n": 100
+          },
+          "expected": 217
+        },
+        {
+          "caseId": "19-16",
+          "input": {
+            "n": 999983
+          },
+          "expected": 999984
+        },
+        {
+          "caseId": "19-17",
+          "input": {
+            "n": 1000000
+          },
+          "expected": 2480437
+        }
+      ]
+    }
+  ]
+}
+
